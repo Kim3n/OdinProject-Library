@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Library</title>
+</head>
+<body>
+    <header>
+        <h1>Library</h1>
+    </header>
+    <div class="container">
+
+        <button id="addBook" class="button-40">ADD BOOK</button>
+        <div class="books-container" id="booksContainer"></div>
+
+        <div id="addBookModal" class="modal">
+            <div class="modal-content">
+              <span class="close" formnovalidate >&times;</span>
+              <form class="new-book-form" id="myForm" onsubmit="return false">
+                <input type="text" id="title" placeholder="Title" required>
+                <input type="text" id="author" placeholder="Author" required>
+                <input type="number" id="pages" placeholder="Pages" required>
+                <div class="book-completed">
+                  <p>READ?</p>
+                  <div class="checkbox-wrapper-23">
+                    <input type="checkbox" id="check-23"/>
+                    <label for="check-23" style="--size: 30px">
+                      <svg viewBox="0,0,50,50">
+                        <path d="M5 30 L 20 45 L 45 5"></path>
+                      </svg>
+                    </label>
+                  </div>
+                </div>
+                <button class="button-40" type="submit" id="submit">SUBMIT</button>
+                </form>
+            </div>
+          
+          </div>
+
+    </div>
+        <footer><a href="https://github.com/Kim3n"><h4>Made by Kim3n</h4></a></footer>
+      <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
